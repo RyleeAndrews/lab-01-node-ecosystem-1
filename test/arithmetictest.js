@@ -18,4 +18,8 @@ describe('Arithmetic', function(){
     let result = arithmetic.add(2, 'hello');
     expect(result).toBe(null);
   });
+  it('should return null if input is a non number', function(){
+    let result = arithmetic.sub(true,3);
+    expect(result).toBe(null);
+  });
 });
